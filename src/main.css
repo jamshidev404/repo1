@@ -1,0 +1,330 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Roboto;
+}
+
+header {
+  height: 114px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.main-button {
+  background-color: #f78bb6;
+  border-radius: 4px;
+  outline: none;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 19px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.main-button button {
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 72px;
+}
+
+.banner {
+  display: flex;
+  height: 652px;
+  width: 100%;
+}
+
+.banner .left-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
+  max-width: 600px;
+}
+
+.banner .wrapper-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 31px;
+  color: #56597a;
+  font-size: 52px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+.main-text h1 {
+  color: #56597a;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+}
+
+.main-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #919299;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: #f78cb6;
+}
+
+.banner .right-box img {
+  width: 532px;
+  height: 532px;
+  object-fit: cover;
+}
+
+/* Services started */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 12px;
+}
+
+.main-button:hover svg {
+  fill: red;
+}
+
+.our-services {
+  color: #f78cb6;
+}
+
+.cards {
+  display: flex;
+  margin-top: 58px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cards:hover {
+  color: #fff;
+}
+
+.cards .card h3 {
+  color: #56597a;
+}
+
+.cards .card p {
+  color: #919299;
+}
+
+.cards .card img:hover {
+  background: #fff;
+}
+
+.card {
+  width: 270px;
+  height: 307px;
+  background-color: #fff1f9;
+  border-radius: 8px;
+  margin-right: 30px;
+  padding: 23px;
+  row-gap: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.5s ease-in;
+}
+
+.card:hover {
+  background: #f78cb6;
+}
+
+.cards .card .img {
+  margin-top: 32px;
+}
+
+.cards .card .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards .card .texts p {
+  text-align: center;
+}
+
+.cards .card:hover .texts h3 {
+  color: #fff;
+}
+
+.cards .card:hover .texts p {
+  color: #fff;
+}
+
+.card:hover .img svg {
+  fill: white;
+}
+
+.card .learn {
+  color: #fff;
+}
+
+.cards .card .learn {
+  display: none;
+}
+
+.card:hover .learn {
+  display: block;
+}
+
+.cards .card:hover {
+  height: 344px;
+  transition: all 0.25s ease-in;
+}
+
+/* Services ended */
+
+/* .services {
+  width: 100%;
+}
+
+.services .services-parent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 6px;
+}
+
+.services .services-cards {
+  margin-top: 52px;
+}
+
+.services-text {
+  color: #f78cb6;
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.services-title {
+  color: #56597a;
+  font-size: 52px;
+  line-height: 72px;
+  font-weight: 700;
+} */
+
+/* Design things */
+
+.section {
+  width: 100%;
+}
+
+.section .design-parent {
+  display: flex;
+  width: 100%;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 79px;
+  margin-top: 170px;
+}
+
+.design-parent .left-box img {
+  width: 587px;
+  height: 587;
+  object-fit: cover;
+}
+
+.design-parent .right-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.design-parent .right-box .right-title {
+  margin-bottom: 42px;
+}
+
+/* Design things end*/
+
+.team {
+  margin-top: 100px;
+}
+
+
+
+/*========= Testimonial ===========*/
+
+.testimonial-parent {
+  display: flex;
+  column-gap: 138px;
+}
+
+.testimonial-parent .left-box img {
+  width: 415px;
+  height: 418px;
+}
+
+.testimonial-parent .right-title {
+  margin-bottom: 42px;
+}
+
+.testimonial-parent .main-text .name-author {
+  color: #56597A;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 23px;
+}
+
+.testimonial-parent .main-text .about-us {
+  margin-top: 38px;
+}
+
+.testimonial-parent .main-text .place-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
