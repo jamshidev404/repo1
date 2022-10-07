@@ -18,6 +18,9 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 
 .main-button {
   background-color: #f78bb6;
@@ -30,6 +33,7 @@ ul {
   column-gap: 19px;
   text-decoration: none;
   width: fit-content;
+  cursor: pointer;
 }
 
 .main-button button {
@@ -40,6 +44,7 @@ ul {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .container {
@@ -52,6 +57,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 58px;
 }
 
 .navbar ul {
@@ -61,6 +67,26 @@ ul {
   column-gap: 72px;
 }
 
+.navbar ul:hover {
+  cursor: pointer;
+}
+
+.wrapper .navbar ul li {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #AAAAAB;
+}
+
+.wrapper .navbar ul li:hover {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #56597A;
+}
+
+
+/*banner style*/
 .banner {
   display: flex;
   height: 652px;
@@ -256,11 +282,11 @@ ul {
 
 /* Design things */
 
-.section {
+.design-section {
   width: 100%;
 }
 
-.section .design-parent {
+.design-section .design-parent {
   display: flex;
   width: 100%;
   /* flex-direction: column; */
@@ -293,7 +319,9 @@ ul {
   margin-top: 100px;
 }
 
-
+.team .team-boxes {
+  column-gap: 60px;
+}
 
 /*========= Testimonial ===========*/
 
@@ -312,7 +340,7 @@ ul {
 }
 
 .testimonial-parent .main-text .name-author {
-  color: #56597A;
+  color: #56597a;
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
@@ -320,11 +348,121 @@ ul {
 }
 
 .testimonial-parent .main-text .about-us {
-  margin-top: 38px;
+  margin-top: 15px;
 }
 
 .testimonial-parent .main-text .place-author {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+}
+
+/* ========Brands styles======= */
+
+.brand-section {
+  width: 100%;
+}
+
+.brand-section .brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+}
+
+/*====== Our blog styles =======*/
+
+.blog-section {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.blog-section .blog-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 242px;
+}
+
+.blog-section .blog-wrapper .left-blog img {
+  width: 350px;
+  height: 350px;
+}
+
+.blog-section .blog-wrapper .right-blog .main-text .blog-text {
+  margin-top: 23px;
+  margin-bottom: 15px;
+}
+
+.blog-section .blog-wrapper .right-blog input {
+  width: 706px;
+  height: 72px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  color: #d2d2d2;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+/*======== Footer =======*/
+.footer-section {
+  /* width: 1440px; */
+  height: 410.48px;
+  margin-top: 150px;
+}
+
+.footer-section .footer-wrapper .first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 25px;
+}
+
+.footer-section .footer-wrapper .main-text .icons:hover {
+  color: #f78cb6;
+}
+
+
+.footer-section .footer-wrapper .first-section .footer-address {
+  margin-top: 38px;
+}
+
+.footer-section .footer-wrapper .first-section .main-class h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32px;
+  color: #56597a;
+}
+
+.footer-wrapper .main-class div a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #919299;
+}
+
+.column {
+  color: red;
+}
+
+.footer-wrapper .main-class div {
+  margin-top: 23px;
+}
+
+.footer-section .last-line .last-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 52px;
+  width: 1440px;
+  height: 54px;
+  background-color: #f78cb6;
+}
+
+.footer-section .last-line .last-wrapper .left-img {
+  margin-left: 134px;
+}
+
+.footer-section .last-line .last-wrapper .right-img {
+  margin-right: 164px;
 }
